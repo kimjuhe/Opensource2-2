@@ -7,12 +7,12 @@ public class hw1 {
 		int x1, y1, x2, y2;
 		double r1, r2, d;
 		
-		System.out.println("Ã¹¹øÂ° ¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â");
+		System.out.println("ì²«ë²ˆì§¸ ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥");
 		Scanner scanner=new Scanner(System.in);
 		x1=scanner.nextInt();
 		y1=scanner.nextInt();
 		r1=scanner.nextDouble();
-		System.out.println("µÎÂ° ¿øÀÇ Áß½É°ú ¹İÁö¸§ ÀÔ·Â");
+		System.out.println("ë‘ì§¸ ì›ì˜ ì¤‘ì‹¬ê³¼ ë°˜ì§€ë¦„ ì…ë ¥");
 		x2=scanner.nextInt();
 		y2=scanner.nextInt();
 		r2=scanner.nextDouble();
@@ -20,11 +20,15 @@ public class hw1 {
 		 d = Math.sqrt(((x1-x2)*(x1-x2))+((y1-y2)*(y1-y2)));
 		
 		 if(d <= r1+r2) {
-	         System.out.print("µÎ ¿øÀº ¼­·Î °ãÄ£´Ù.");
+	         System.out.print("ë‘ ì›ì€ ì„œë¡œ ê²¹ì¹œë‹¤.");
 	      }
 	      else {
-	         System.out.print("µÎ ¿øÀº ¼­·Î °ãÄ¡Áö ¾Ê´Â´Ù.");
+	         System.out.print("ë‘ ì›ì€ ì„œë¡œ ê²¹ì¹˜ì§€ ì•ŠëŠ”ë‹¤.");
 	      }
 		 scanner.close();
 	}
 }
+
+
+
+<img width="153" alt="hw1-1 ê²°ê³¼í™”ë©´" src="https://user-images.githubusercontent.com/58322511/93014820-54633c80-f5ef-11ea-83cd-94bd109b665c.png">
