@@ -5,21 +5,18 @@ import java.util.*;
 public class Hw8 {
 	public static void main(String [] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÀüÃ¼ °æ·Î¸íÀÌ ¾Æ´Ñ ÆÄÀÏ ÀÌ¸§¸¸ ÀÔ·ÂÇÏ´Â °æ¿ì, ÆÄÀÏÀº ÇÁ·ÎÁ§Æ® Æú´õ¿¡ ÀÖ¾î¾ß ÇÕ´Ï´Ù.");
-		System.out.print("´ë»ó ÆÄÀÏ¸í ÀÔ·Â>> ");
+		System.out.println("ì „ì²´ ê²½ë¡œëª…ì´ ì•„ë‹Œ íŒŒì¼ ì´ë¦„ë§Œ ì…ë ¥í•˜ëŠ” ê²½ìš°, íŒŒì¼ì€ í”„ë¡œì íŠ¸ í´ë”ì— ìˆì–´ì•¼ í•©ë‹ˆë‹¤.");
+		System.out.print("ëŒ€ìƒ íŒŒì¼ëª… ì…ë ¥>> ");
 		File file = new File("C:\\Users\\USER\\eclipse-workspace\\Opensource1\\", scanner.next());
-		scanner.nextLine(); //¿ì¼± ÀÔ·ÂµÈ°Å Áö¿ò
+		scanner.nextLine();
 		try {
 		for(;;) {
 			Scanner fScanner = new Scanner(new FileInputStream(file),"MS949");
-			//±×¸®°í FileReader·Î Çß´õ´Ï ÇÑ±ÛÀÌ ´Ù ±úÁ®¼­ ³ª¿Í¼­ FileInputStreamÀ¸·Î ½á¼­
-			//ÇÑ±Û ÀÎÄÚµù °¡´ÉÇÑ ¹®ÀÚ ÁıÇÕÀ» ÁöÁ¤ÇØÁà¾ßÇÑ´Ù
-			//±×¸®°í ¿©±â fScanner ³ÖÀº ÀÌÀ¯´Â ´Ù½Ã °Ë»öÇÏ¸é Ã³À½ºÎÅÍ ÇØ¾ßµÇ´Ï±î
 			int linenumber=1;
-			System.out.print("°Ë»öÇÒ ´Ü¾î³ª ¹®Àå>> ");
+			System.out.print("ê²€ìƒ‰í•  ë‹¨ì–´ë‚˜ ë¬¸ì¥>> ");
 			String search = scanner.nextLine();
-			if(search.equals("±×¸¸")) {
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+			if(search.equals("ê·¸ë§Œ")) {
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				return;
 			}
 			while(fScanner.hasNext()) {
@@ -31,7 +28,7 @@ public class Hw8 {
 			}
 		}
 		} catch(FileNotFoundException e) {
-			System.out.println("¿À·ù");
+			System.out.println("ì˜¤ë¥˜");
 		}
 	}
 }
